@@ -140,7 +140,7 @@ img {
 
 /*Header*/
 #header-home {
-  background: url("images/showcase.jpg") no-repeat center right/cover;
+  background: url("../images/showcase.jpg") no-repeat center right/cover;
   height: 100vh;
   color: #f4f4f4; }
   #header-home .header-content {
@@ -157,7 +157,7 @@ img {
       opacity: 0.9; }
 
 #header-inner {
-  background: url("images/showcase.jpg") no-repeat 20% 30%/cover;
+  background: url("../images/showcase.jpg") no-repeat 20% 30%/cover;
   height: 5.5rem;
   border-bottom: 3px solid #1c0f0b; }
 
