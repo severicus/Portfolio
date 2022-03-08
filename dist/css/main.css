@@ -567,11 +567,20 @@ img {
 #form .container {
   height: 50%;
 }
-#form .container form {
+#form .container form .form-layout {
   display: grid;
   grid-template-areas: "name email" "subject phone" "message message";
   grid-gap: 1.2rem;
   margin: 1.2rem 0;
+}
+#form .container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+}
+#form .container form button {
+  margin: 0 auto;
 }
 #form .container form input {
   padding: 0.5rem 0.5rem;

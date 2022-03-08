@@ -51,52 +51,54 @@
           <p>Here is how you can reach me</p>
         </div>
         <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
-          <input
-            type="text"
-            name="name"
-            id="name"
-            class="text-input name-input"
-            placeholder="Name ... "
-            required
-          />
-          <input
-            type="text"
-            name="text"
-            name="subject"
-            id="subject"
-            class="text-input subject-input"
-            placeholder="Subject ... "
-            required
-          />
-          <input
-            type="email"
-            id="email"
-            class="text-input email-input"
-            placeholder="Email Address"
-            name="email"
-            required
-          />
-          <input
-            type="text"
-            id="phone"
-            class="text-input phone-input"
-            placeholder="Phone Number"
-            name="phone"
-          />
-          <textarea
-            class="text-input message-input"
-            id="message-form"
-            placeholder="Enter Your Message ..."
-            name="message"
-          >
-          </textarea>
-          <div class="my-2">
-            <div data-netlify-recaptcha="true"></div>
+          <div class="form-layout">
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="text-input name-input"
+              placeholder="Name ... "
+              required
+            />
+            <input
+              type="text"
+              name="text"
+              name="subject"
+              id="subject"
+              class="text-input subject-input"
+              placeholder="Subject ... "
+              required
+            />
+            <input
+              type="email"
+              id="email"
+              class="text-input email-input"
+              placeholder="Email Address"
+              name="email"
+              required
+            />
+            <input
+              type="text"
+              id="phone"
+              class="text-input phone-input"
+              placeholder="Phone Number"
+              name="phone"
+            />
+            <textarea
+              class="text-input message-input"
+              id="message-form"
+              placeholder="Enter Your Message ..."
+              name="message"
+            >
+            </textarea>
+            <div class="my-2">
+              <div data-netlify-recaptcha="true"></div>
+            </div>
           </div>
+          <button type="submit" id="submmit-btn" class="btn-dark form-btn">
+            Submit
+          </button>
         </form>
-        <button type="submit" id="submmit-btn" class="btn-dark form-btn">
-          Submit
-        </button>
       </div>
     </section>
 
