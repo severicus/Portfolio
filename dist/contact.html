@@ -26,16 +26,24 @@
           /></a>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="about.html" >About</a></li>
+            <li><a href="about.html">About</a></li>
             <li><a href="projects.html">Projects</a></li>
-            <li><a href="contact.html" >Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </ul>
+          <div>
+            <input type="checkbox" class="checkbox" id="chk" />
+            <label class="label" for="chk">
+              <i class="fas fa-moon fa-1x"></i>
+              <i class="fas fa-sun fa-1x"></i>
+              <div class="ball"></div>
+            </label>
+          </div>
         </nav>
       </div>
     </header>
 
     <!-- Section A: About -->
-    <section id="form" class="py-2 icons">
+    <section id="form" class="icons">
       <div class="container">
         <div class="intr">
           <h2>Contact Me</h2>
@@ -43,31 +51,56 @@
           <p>Here is how you can reach me</p>
         </div>
         <form method="POST" data-netlify="true" data-netlify-recaptcha="true">
-          <input type="text" name="name" class="text-input name-input" placeholder="Name ... " required>
-          <input type="text" name="text" name="subject" class="text-input subject-input" placeholder="Subject ... " required>
-          <input type="email" class="text-input email-input" placeholder="Email Address" name="email" required/>
-              <input
-                type="text"
-                class="text-input phone-input"
-                placeholder="Phone Number"
-                name="phone"
-              />
-              <textarea
-                class="text-input message-input"
-                placeholder="Enter Your Message ..."
-                name="message"> </textarea>
-              <div class="my-2">
-                <div data-netlify-recaptcha="true"></div>
-              </div>
-            </div>
-            <button type="submit" class="btn-dark form-btn">Submit</button>
-          </form>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="text-input name-input"
+            placeholder="Name ... "
+            required
+          />
+          <input
+            type="text"
+            name="text"
+            name="subject"
+            id="subject"
+            class="text-input subject-input"
+            placeholder="Subject ... "
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            class="text-input email-input"
+            placeholder="Email Address"
+            name="email"
+            required
+          />
+          <input
+            type="text"
+            id="phone"
+            class="text-input phone-input"
+            placeholder="Phone Number"
+            name="phone"
+          />
+          <textarea
+            class="text-input message-input"
+            id="message-form"
+            placeholder="Enter Your Message ..."
+            name="message"
+          >
+          </textarea>
+          <div class="my-2">
+            <div data-netlify-recaptcha="true"></div>
+          </div>
+        </form>
+        <button type="submit" id="submmit-btn" class="btn-dark form-btn">
+          Submit
+        </button>
       </div>
     </section>
 
-    
-
-    <!-- Section C: Logos -->
+    <!-- Section C: Logos
     <section id="contact-b">
       <div class="container">
         <div class="contact-info">
@@ -87,11 +120,11 @@
 
     <section id="contact-c" >
       <div class="container">
-        <h1>Let's Start Your Next Project</h1>
+        <h1>Let's Start Your Next Project ... </h1>
       </div>
-    </section>
+    </section> -->
 
-    <footer id="main-footer">
+    <footer id="main-footer" class="sticky">
       <div class="footer-content container">
         <p>Copyright &copy; 2022. All Rights Reserved</p>
         <div class="social">
@@ -102,6 +135,6 @@
         </div>
       </div>
     </footer>
-
+    <script src="js/darkmode.js"></script>
   </body>
 </html>

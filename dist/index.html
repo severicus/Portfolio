@@ -30,6 +30,14 @@
             <li><a href="projects.html">Projects</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
+          <div>
+            <input type="checkbox" class="checkbox" id="chk" />
+            <label class="label" for="chk">
+              <i class="fas fa-moon"></i>
+              <i class="fas fa-sun"></i>
+              <div class="ball"></div>
+            </label>
+          </div>
         </nav>
         <div class="header-content">
           <h1>
@@ -59,7 +67,7 @@
       <div id="skills" class="icons">
         <div>
           <i class="far fa-clipboard-list fa-3x"></i>
-          <h3>Concepting & Planning</h3>
+          <h3 class="hthree">Concepting & Planning</h3>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam harum
             architecto corporis repellat natus autem ea a assumenda eum numquam?
@@ -67,7 +75,7 @@
         </div>
         <div>
           <i class="far fa-code fa-3x"></i>
-          <h3>Design & Development</h3>
+          <h3 class="hthree">Design & Development</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
             laudantium. Aut omnis et asperiores repellendus possimus facere rem
@@ -76,7 +84,7 @@
         </div>
         <div>
           <i class="far fa-object-ungroup fa-3x"></i>
-          <h3>Maintenance and Suport</h3>
+          <h3 class="hthree">Maintenance and Suport</h3>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur
             magni totam dolorem architecto voluptatibus saepe sed earum eligendi
@@ -85,7 +93,7 @@
         </div>
         <div>
           <i class="far fa-stopwatch fa-3x"></i>
-          <h3>Efficient timing</h3>
+          <h3 class="hthree">Efficient timing</h3>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur
             magni totam dolorem architecto voluptatibus saepe sed earum eligendi
@@ -98,25 +106,25 @@
     <!-- Section B: Achievements -->
 
     <section id="home-b" class="py-2 icons">
-      <div id="achievements" class="icons">
-        <div>
+      <div class="achievements" class="icons">
+        <div class="divbg-1">
           <i class="far fa-users fa-3x"></i>
-          <h3>Clients</h3>
+          <h3 class="hthree">Clients</h3>
           <p>xxx</p>
         </div>
-        <div>
+        <!-- <div class="divbg-2">
           <i class="far fa-medal fa-3x"></i>
           <h3>Awards</h3>
           <p>xxx</p>
-        </div>
-        <div>
+        </div> -->
+        <div class="divbg-2">
           <i class="far fa-clock fa-3x"></i>
-          <h3>Hours Worked</h3>
+          <h3 class="hthree">Hours Worked</h3>
           <p>150</p>
         </div>
-        <div>
+        <div class="divbg-1">
           <i class="far fa-laptop-code fa-3x"></i>
-          <h3>Projects Completed</h3>
+          <h3 class="hthree">Projects Completed</h3>
           <p>15</p>
         </div>
       </div>
@@ -125,7 +133,7 @@
     <!-- Section C: Process -->
     <section id="home-c" class="py-2 icons">
       <div class="container">
-        <h2>MY CREATIVE PROCESS</h2>
+        <h3 class="hthree">MY CREATIVE PROCESS</h3>
         <div class="bottom-line"></div>
         <p>
           All of my website designs are based on a practical and simple process
@@ -135,47 +143,30 @@
       </div>
       <div id="process" class="icons">
         <div>
-          <i class="far fa-comments fa-3x">
-            <div class="process-step">1</div>
-          </i>
-          <h3>Discussing the project</h3>
+          <i class="far fa-comments fa-3x"> </i>
+          <h3 class="hthree">Discussing the project</h3>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam harum
-            architecto corporis repellat natus autem ea a assumenda eum numquam?
+            We will have a call that's as long as needed for me to understand
+            exactly what it is you're looking, all the bits and bobs of what you
+            want your website to look like.
           </p>
         </div>
-        <div>
-          <i class="far fa-brain fa-3x process-icon">
-            <div class="process-step">2</div>
-          </i>
-          <h3>Brainstorming</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum,
-            laudantium. Aut omnis et asperiores repellendus possimus facere rem
-            tenetur nisi!
-          </p>
-        </div>
-        <div>
-          <i class="far fa-pen-fancy fa-3x"
-            ><div class="process-step">3</div></i
-          >
 
-          <h3>Design Planning</h3>
+        <div>
+          <i class="far fa-pen-fancy fa-3x"></i>
+
+          <h3 class="hthree">Design Planning</h3>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur
-            magni totam dolorem architecto voluptatibus saepe sed earum eligendi
-            est dolores.
+            After the call I will do my best to ensure you get exactly what you
+            ask for, and any potential improvements will be sent to you.
           </p>
         </div>
         <div>
-          <i class="far fa-ethernet process-icon fa-3x">
-            <div class="process-step">4</div>
-          </i>
-          <h3>Follow up</h3>
+          <i class="far fa-ethernet process-icon fa-3x"> </i>
+          <h3 class="hthree">Follow up</h3>
           <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur
-            magni totam dolorem architecto voluptatibus saepe sed earum eligendi
-            est dolores.
+            All updates about your website will be communicated every week so
+            you know what's going on every step of the way.
           </p>
         </div>
       </div>
@@ -192,7 +183,14 @@
         </div>
       </div>
     </footer>
-
+    <!-- <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script>
+      function addDarkmodeWidget() {
+        new Darkmode().showWidget();
+      }
+      window.addEventListener("load", addDarkmodeWidget);
+    </script> -->
     <script src="js/typewriter.js"></script>
+    <script src="js/darkmode.js"></script>
   </body>
 </html>
