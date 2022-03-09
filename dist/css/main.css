@@ -389,6 +389,10 @@ img {
   left: 0;
   width: 100%;
 }
+
+.contact-footer {
+  margin-top: 5rem;
+}
 .sticky {
   position: fixed;
 }
@@ -744,7 +748,16 @@ img {
     grid-gap: 1rem;
     box-shadow: none;
   }
+  #main-navbar .tggl {
+    margin-top: 15px;
+  }
+  #header-home {
+    height: auto;
+  }
 
+  #home-a #skills div {
+    padding: 10px;
+  }
   .label {
     height: 15px;
     width: 45px;
@@ -787,6 +800,7 @@ img {
   }
   #form {
     padding: 10px !important;
+    margin-top: 4.5rem;
   }
   #form .container {
     display: flex;
@@ -821,7 +835,6 @@ img {
   }
   #header-home,
   #header-inner {
-    /* height: 15%; */
     border-bottom: 3px solid #1c0f0b;
     background-position: 20% 30%;
   }
@@ -829,10 +842,7 @@ img {
   #header-inner .header-content {
     display: none;
   }
-  #header-home #header-inner,
-  #header-inner #header-inner {
-    height: 30rem;
-  }
+
   #home-a #skills,
   #home-b #achievements,
   #home-c #process,
@@ -871,6 +881,19 @@ img {
     font-size: 2rem;
   }
 
+  #form .container form .form-layout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    grid-template-areas: none;
+    grid-gap: 0;
+    margin: 10px 0;
+  }
+  #form .container form .form-layout input,
+  textarea {
+    width: 100%;
+  }
   #main-footer {
     /* height: 15%; */
     padding: 10px;
@@ -890,6 +913,7 @@ img {
   }
   #main-footer .footer-content p {
     font-size: 0.9rem;
+    margin-bottom: 10px;
   }
   #main-footer .social i {
     scale: 1;
