@@ -452,25 +452,10 @@ img {
 .about-info img {
   border-radius: 50%;
 }
-/* #about-a .about-info .portrait {
-  grid-area: portrait;
-}
-#about-a .about-info .bio {
-  grid-area: bio;
-}
-#about-a .about-info .aw-1 {
-  grid-area: aw-1;
-}
-#about-a .about-info .aw-2 {
-  grid-area: aw-2;
-}
-#about-a .about-info .aw-3 {
-  grid-area: aw-3;
-} */
+
 #about-a .about-info div {
   margin-top: 1.5rem;
   padding: 15px;
-  height: 100%;
 }
 /* #about-a .about-info div:nth-child(2) {
   background: #f3ede4;
@@ -532,12 +517,11 @@ img {
   padding: 4rem;
 }
 #about-c .about-logos {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1rem;
-}
-#about-c .about-logos img {
-  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1rem;
+  flex: 1 0;
 }
 
 #about-d .testimonials {
@@ -864,12 +848,7 @@ img {
   #home-b #achievements div {
     padding: 2rem 0 1rem 0;
   }
-  #about-a .about-info {
-    grid-template-areas: "portrait" "bio" "aw-1" "aw-2" "aw-3";
-  }
-  #about-c {
-    display: none;
-  }
+
   #form .container form {
     grid-template-areas: "name" "subject" "email" "phone" "message";
   }
@@ -906,6 +885,13 @@ img {
     grid-template-areas: none;
     grid-gap: 0;
     margin: 10px 0;
+  }
+
+  .about-logos {
+    flex-wrap: wrap;
+  }
+  .about-logos img {
+    width: 80px;
   }
   #form .container form .form-layout input,
   textarea {
