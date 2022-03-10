@@ -80,7 +80,7 @@ h4 {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .container {
@@ -277,7 +277,7 @@ img {
 
 #home-a #skills {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-gap: 1rem;
   text-align: center;
   height: 100%;
@@ -637,6 +637,7 @@ img {
 }
 #gallery .items {
   display: grid;
+  grid-gap: 1em;
   grid-template-columns: repeat(3, 1fr);
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
 }
@@ -661,6 +662,13 @@ img {
 #gallery .item:hover:after {
   transform: scale(2) translateX(0) translateY(0) rotate(-28deg);
 }
+
+#descr {
+  text-align: center;
+  font-size: 0.85rem;
+  margin-top: -50px;
+  margin-bottom: 25px;
+}
 #gallery .item:hover .item-image {
   transform: scale(1.2);
 }
@@ -669,7 +677,6 @@ img {
   transform: translateY(0);
 }
 #gallery .item-image {
-  height: auto;
   transform: translateZ(0);
   display: block;
   transition: transform 750ms cubic-bezier(0.2, 1, 0.3, 1);
@@ -685,7 +692,6 @@ img {
   top: 0;
   left: 0;
   width: 100%;
-  height: auto;
   line-height: 0;
 }
 #gallery .item-text {
@@ -740,6 +746,10 @@ img {
 }
 
 @media (max-width: 501px) {
+  #descr {
+    margin-top: -25px;
+    margin-bottom: 20px;
+  }
   #gallery .items {
     grid-template-columns: 1fr;
     width: 50%;
@@ -784,7 +794,7 @@ img {
   }
 
   .intr h2 {
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding-top: 10px;
   }
 
