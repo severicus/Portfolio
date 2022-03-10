@@ -890,7 +890,14 @@ img {
   #contact-c h1 {
     font-size: 2rem;
   }
-
+  .about-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .portrait {
+    width: 50%;
+  }
   #form .container form .form-layout {
     display: flex;
     flex-direction: column;
